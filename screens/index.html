@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>daviniccacio.dev | Dev. Front-End</title>
+    <link href="../assets/img/iconsite.png" type="image/png" rel="icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
+
+<body class="bg-[#0B0C08] font-['Poppins']">
+    <header id="mainHeader" class="fixed top-0 left-0 w-full z-50">
+        <ul class="bg-gradient-to-r from-[#030712] via-[#171738] to-[#030712] w-full h-20 flex flex-row justify-between px-4 sm:px-6 md:px-10 items-center">
+            <li class="text-white text-lg">daviniccacio.dev</li>           
+            <div class="hidden md:flex gap-4 lg:gap-7">
+                <li class="text-white text-sm lg:text-base"><a href="#pagina_inicial" id="link-pagina_inicial" class="nav-link smooth-scroll-link transition duration-300 hover:font-bold hover:underline underline-offset-2 hover:text-[#27ADF5]">Página Inicial</a></li>
+                <li class="text-white text-sm lg:text-base"><a href="#sobre_mim" id="link-sobre_mim" class="nav-link smooth-scroll-link transition duration-300 hover:font-bold hover:underline underline-offset-2 hover:text-[#27ADF5]">Sobre</a></li>
+                <li class="text-white text-sm lg:text-base"><a href="#projetos" id="link-projetos" class="nav-link smooth-scroll-link transition duration-300 hover:font-bold hover:underline underline-offset-2 hover:text-[#27ADF5]">Projetos</a></li>
+                <li class="text-white text-sm lg:text-base"><a href="#contatos" id="link-contatos" class="nav-link smooth-scroll-link transition duration-300 hover:font-bold hover:underline underline-offset-2 hover:text-[#27ADF5]">Contatos</a></li>
+            </div>
+
+            <button id="menu-button" class="md:hidden text-white">
+                <ion-icon name="menu" class="w-8 h-8"></ion-icon>
+            </button>
+        </ul>
+        <div id="mobile-menu" class="md:hidden bg-gradient-to-r from-[#030712] via-[#171738] to-[#030712] w-full absolute top-20 left-0 overflow-hidden transition-all duration-300 ease-in-out" style="max-height: 0;">
+            <ul class="flex flex-col text-center">
+                <li class="text-white text-base py-2"><a href="#pagina_inicial" class="block w-full smooth-scroll-link pt-2 border-t border-[#27ADF5] hover:text-[#27ADF5]">Página Inicial</a></li>
+                <li class="text-white text-base py-2"><a href="#sobre_mim" class="block w-full smooth-scroll-link hover:text-[#27ADF5]">Sobre</a></li>
+                <li class="text-white text-base py-2"><a href="#projetos" class="block w-full smooth-scroll-link hover:text-[#27ADF5]">Projetos</a></li>
+                <li class="text-white text-base py-2"><a href="#contatos" class="block w-full smooth-scroll-link hover:text-[#27ADF5]">Contatos</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section id="pagina_inicial" class="pt-24">
+            <div class="fade-in text-white mx-4 sm:mx-8 md:m-10 flex flex-col-reverse lg:flex-row justify-between items-center lg:items-center pb-8 md:pb-[119px] gap-8 md:gap-0">
+                <div class="flex flex-col justify-center w-full lg:max-w-[700px] text-center lg:text-left">
+                    <p class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold whitespace-nowrap">Olá, meu nome é
+                        <label class="bg-gradient-to-r from-white via-[#7180B9] to-white bg-clip-text text-transparent">Davi Nicacio</label>
+                    </p>
+                    <p class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold whitespace-nowrap">
+                        <label class="bg-gradient-to-r from-white via-[#7180B9] to-white bg-clip-text text-transparent">
+                            sou <span id="typing"></span></label>
+                    </p>
+                    <p class="my-5 text-balance w-full lg:max-w-[790px] text-sm sm:text-base md:text-lg font-medium">
+                        Meu objetivo é transformar conceitos em soluções visuais elegantes e funcionais, sempre
+                        buscando a melhor experiência para o usuário. Além do desenvolvimento, gosto de cuidar da
+                        parte visual dos projetos, garantindo que design e código trabalhem juntos para criar produtos
+                        de qualidade
+                    </p>
+                    <div class="flex flex-row justify-center lg:justify-start gap-3 mt-5">
+                        <a href="https://github.com/daviniccacio">
+                            <ion-icon name="logo-github" class="h-10 w-10 sm:h-[50px] sm:w-[50px] rounded-full bg-[#0B0C08] p-2 sm:p-3 text-[#7180B9] transition duration-300 ease-in-out hover:scale-[1.10] hover:shadow-[inset_0_0_5px_#7180B9]"></ion-icon>
+                        </a>
+                        <a href="https://www.linkedin.com/in/daviniccacio/">
+                            <ion-icon name="logo-linkedin" class="h-10 w-10 sm:h-[50px] sm:w-[50px] rounded-full bg-[#0B0C08] p-2 sm:p-3 text-[#7180B9] transition duration-300 ease-in-out hover:scale-[1.10] hover:shadow-[inset_0_0_5px_#7180B9]"></ion-icon>
+                        </a>
+                        <a href="https://www.instagram.com/daviniccacio/">
+                            <ion-icon name="logo-instagram" class="h-10 w-10 sm:h-[50px] sm:w-[50px] rounded-full bg-[#0B0C08] p-2 sm:p-3 text-[#7180B9] transition duration-300 ease-in-out hover:scale-[1.10] hover:shadow-[inset_0_0_5px_#7180B9]"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+                <img src="../assets/img/nicacio.png"
+                    class="h-48 w-48 sm:h-60 sm:w-60 md:mb-10 md:h-[300px] md:w-[300px] rounded-full transition ease-in-out duration-300 hover:scale-110">
+            </div>
+        </section>
+
+        <section id="sobre_mim"
+            class="fade-in bg-gradient-to-r from-[#171738] via-[#030712] to-[#171738] pt-10 w-full h-full pb-8 md:pb-[50px]">
+            <p class="text-white text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold px-4">Sobre Mim</p>
+            <p class="text-white text-center text-sm sm:text-base px-4 mt-2">Desenvolvedor Front-End | JavaScript, HTML, CSS, Tailwind, React Native, Electron, Python
+            </p>
+
+            <article class="flex flex-col lg:flex-row justify-center items-center lg:items-stretch">
+                <div class="w-full max-w-sm sm:max-w-md lg:w-[400px] h-auto border border-[#111827] rounded-lg m-4 lg:m-10 p-4 bg-gradient-to-b from-[#030712] to-[#111827] transition duration-300 hover:border-[#113355] hover:scale-[1.03]">
+                    <p class="text-blue-300 text-xl font-bold pb-3">Sobre mim</p>
+                    <p class="text-white font-light text-sm sm:text-base">Desenvolvedor Front-end com foco na criação de soluções
+                        web funcionais, responsivas e com excelente experiência para o usuário. Possuo experiência em HTML, CSS, Tailwind CSS,
+                        JavaScript e React Native. Busco sempre transformar ideias em produtos digitais acessíveis e bem estruturados,
+                        colaborando efetivamente em equipes.</p>
+                </div>
+                <div class="w-full max-w-sm sm:max-w-md lg:w-[400px] h-auto border border-[#111827] rounded-lg m-4 lg:m-10 p-4 bg-gradient-to-b from-[#030712] to-[#111827] transition duration-300 hover:border-[#113355] hover:scale-[1.03]">
+                    <p class="text-blue-300 text-xl font-bold pb-3">Principais habilidades</p>
+                    <p class="font-light text-sm sm:text-base">
+                        <li class="text-white mx-4 pb-2 font-bold">Front-End:
+                            <label class="font-light"> HTML5, CSS3, JavaScript, Tailwind CSS, React Native, Electron</label>
+                        </li>
+                        <li class="text-white mx-4 pb-2 font-bold">Design e Prototipação:
+                            <label class="font-light"> Figma</label>
+                        </li>
+                        <li class="text-white mx-4 pb-2 font-bold">Versionamento:
+                            <label class="font-light"> Git e GitHub</label>
+                        </li>
+                    </p>
+                </div>
+                <div class="w-full max-w-sm sm:max-w-md lg:w-[400px] h-auto border border-[#111827] rounded-lg m-4 lg:m-10 p-4 bg-gradient-to-b from-[#030712] to-[#111827]
+                        transition duration-300 hover:border-[#113355] hover:scale-[1.03]">
+                    <p class="text-blue-300 text-xl font-bold pb-3">Minha Missão</p>
+                    <p class="text-white font-light text-sm sm:text-base">Busco contribuir em projetos web onde eu possa aplicar
+                        minha criatividade e meu conhecimento técnico para criar soluções práticas, intuitivas e com impacto positivo
+                        no dia a dia das pessoas.</p>
+                </div>
+            </article>
+
+            <article class="mt-8 md:mt-0">
+                <p class="text-xl sm:text-2xl md:text-3xl font-bold text-white text-center m-4 md:m-5">Tecnologias
+                    aprendidas</p>
+                <div
+                    class="grid grid-cols-2 sm:grid-cols-4 lg:flex lg:flex-row lg:flex-nowrap justify-items-center text-white gap-4 lg:gap-6 max-w-7xl mx-4 p-4">
+                    <div class="flex flex-col items-center justify-around m-2 border border-[#111827] p-4 rounded-lg bg-[#030712] w-28 h-28 sm:w-32 sm:h-32 md:w-[150px] md:h-[150px] 
+                    transition duration-300 hover:shadow-[0_0_5px_#7180B9] hover:scale-[1.02] hover:border-[#113355]">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                            class="w-8 h-8 sm:w-10 sm:h-10 md:w-[50px] md:h-[50px] " />
+                        <p class="text-xs sm:text-sm">JavaScript</p>
+                    </div>
+                    <div class="flex flex-col items-center justify-around m-2 border border-[#111827] p-4 rounded-lg bg-[#030712] w-28 h-28 sm:w-32 sm:h-32 md:w-[150px] md:h-[150px]
+                    transition duration-300 hover:shadow-[0_0_5px_#7180B9] hover:scale-[1.02] hover:border-[#113355]">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                            class="w-8 h-8 sm:w-10 sm:h-10 md:w-[50px] md:h-[50px]" />
+                        <p class="text-xs sm:text-sm">HTML</p>
+                    </div>
+                    <div class="flex flex-col items-center justify-around m-2 border border-[#111827] p-4 rounded-lg bg-[#030712] w-28 h-28 sm:w-32 sm:h-32 md:w-[150px] md:h-[150px]
+                    transition duration-300 hover:shadow-[0_0_5px_#7180B9] hover:scale-[1.02] hover:border-[#113355]">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                            class="w-8 h-8 sm:w-10 sm:h-10 md:w-[50px] md:h-[50px]" />
+                        <p class="text-xs sm:text-sm">CSS</p>
+                    </div>
+                    <div class="flex flex-col items-center justify-around m-2 text-center border border-[#111827] p-4 rounded-lg bg-[#030712] w-28 h-28 sm:w-32 sm:h-32 md:w-[150px] md:h-[150px]
+                    transition duration-300 hover:shadow-[0_0_5px_#7180B9] hover:scale-[1.02] hover:border-[#113355]">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+                            class="w-8 h-8 sm:w-10 sm:h-10 md:w-[50px] md:h-[50px]" />
+                        <p class="text-xs sm:text-sm">Tailwind CSS</p>
+                    </div>
+                    <div class="flex flex-col items-center justify-around text-center m-2 border border-[#111827] p-4 rounded-lg bg-[#030712] w-28 h-28 sm:w-32 sm:h-32 md:w-[150px] md:h-[150px]
+                    transition duration-300 hover:shadow-[0_0_5px_#7180B9] hover:scale-[1.02] hover:border-[#113355]">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                            class="w-8 h-8 sm:w-10 sm:h-10 md:w-[50px] md:h-[50px]" />
+                        <p class="text-xs sm:text-sm">React Native</p>
+                    </div>
+                    <div class="flex flex-col items-center justify-around m-2 border border-[#111827] p-4 rounded-lg bg-[#030712] w-28 h-28 sm:w-32 sm:h-32 md:w-[150px] md:h-[150px]
+                    transition duration-300 hover:shadow-[0_0_5px_#7180B9] hover:scale-[1.02] hover:border-[#113355]">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/electron/electron-original.svg"
+                            class="w-8 h-8 sm:w-10 sm:h-10 md:w-[50px] md:h-[50px]" />
+                        <p class="text-xs sm:text-sm">Electron</p>
+                    </div>
+                    <div class="flex flex-col items-center justify-around m-2 border border-[#111827] p-4 rounded-lg bg-[#030712] w-28 h-28 sm:w-32 sm:h-32 md:w-[150px] md:h-[150px]
+                    transition duration-300 hover:shadow-[0_0_5px_#7180B9] hover:scale-[1.02] hover:border-[#113355]">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                            class="w-8 h-8 sm:w-10 sm:h-10 md:w-[50px] md:h-[50px]" />
+                        <p class="text-xs sm:text-sm">Python</p>
+                    </div>
+                    <div class="flex flex-col items-center justify-around m-2 border border-[#111827] p-4 rounded-lg bg-[#030712] w-28 h-28 sm:w-32 sm:h-32 md:w-[150px] md:h-[150px]
+                    transition duration-300 hover:shadow-[0_0_5px_#7180B9] hover:scale-[1.02] hover:border-[#113355]">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
+                            class="w-8 h-8 sm:w-10 sm:h-10 md:w-[50px] md:h-[50px]" />
+                        <p class="text-xs sm:text-sm">Figma</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section id="projetos" class="fade-in pb-16 md:pb-[75px] pt-10">
+            <p class="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">Meus Projetos</p>
+            <p class="text-white text-center text-sm sm:text-base px-4 mt-2">Projetos que desenvolvi recentemente, aplicando tecnologias
+                e design que aprendi.</p>
+            <article class="flex flex-col lg:flex-row justify-center items-center gap-6 md:gap-10 mt-6 md:mt-10 px-4 md:px-5">
+                <div class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg bg-[#111827] rounded-xl overflow-hidden shadow-2xl transition duration-500 hover:shadow-[0_0_20px_rgba(113,128,185,0.5)]">
+                    <div class="h-32 sm:h-40 w-full bg-cover bg-top"
+                        style="background-image: url(../assets/img/pomodoroapp.png);">
+                        <div class="bg-black bg-opacity-30 h-full flex items-end p-3 sm:p-4">
+                            <h3 class="text-lg sm:text-xl font-bold text-white">PomodoroApp</h3>
+                        </div>
+                    </div>
+                    <div class="p-3 sm:p-4">
+                        <h4 class="text-blue-300 text-lg sm:text-xl font-bold mb-2">Web Desktop de Tempo e Foco</h4>
+                        <p class="text-gray-400 text-xs sm:text-sm mb-4">Aplicativo de temporizador para focos e
+                            estudos.</p>
+                        <div class="flex flex-wrap gap-1 sm:gap-2 mb-4">
+                            <span class="text-xs font-medium px-2 py-1 rounded-full text-[#7180B9] bg-blue-900/50 border border-[#7180B9]">Electron</span>
+                            <span class="text-xs font-medium px-2 py-1 rounded-full text-[#7180B9] bg-blue-900/50 border border-[#7180B9]">JavaScript</span>
+                            <span class="text-xs font-medium px-2 py-1 rounded-full text-[#7180B9] bg-blue-900/50 border border-[#7180B9]">Tailwind CSS</span>
+                            <span class="text-xs font-medium px-2 py-1 rounded-full text-[#7180B9] bg-blue-900/50 border border-[#7180B9]">HTML</span>
+                        </div>
+                        <div class="flex justify-center">
+                            <a href="https://github.com/daviniccacio/PomodoroApp" target="_blank" class="flex items-center justify-center gap-2 w-full sm:w-1/2 px-3 sm:px-4 py-2 text-xs sm:text-sm font-bold text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition duration-300">
+                                Ver Projeto
+                                <ion-icon name="logo-github"
+                                    class="h-4 w-4 sm:h-[20px] sm:w-[20px] text-white"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg bg-[#111827] rounded-xl overflow-hidden shadow-2xl transition duration-500 hover:shadow-[0_0_20px_rgba(113,128,185,0.5)]">
+                    <div class="h-32 sm:h-40 w-full bg-cover"
+                        style="background-image: url(../assets/img/sitehordacross.png);">
+                        <div class="bg-black bg-opacity-30 h-full flex items-end p-3 sm:p-4">
+                            <h3 class="text-lg sm:text-xl font-bold text-white">Horda Crossfit</h3>
+                        </div>
+                    </div>
+                    <div class="p-3 sm:p-4">
+                        <h4 class="text-blue-300 text-lg sm:text-xl font-bold mb-2">Web site para um centro de
+                            treinamento</h4>
+                        <p class="text-gray-400 text-xs sm:text-sm mb-4">Site que informa sobre os planos, horários, o
+                            centro de treinamento.</p>
+                        <div class="flex flex-wrap gap-1 sm:gap-2 mb-4">
+                            <span class="text-xs font-medium px-2 py-1 rounded-full text-[#7180B9] bg-blue-900/50 border border-[#7180B9]">HTML</span>
+                            <span class="text-xs font-medium px-2 py-1 rounded-full text-[#7180B9] bg-blue-900/50 border border-[#7180B9]">Tailwind CSS</span>
+                            <span class="text-xs font-medium px-2 py-1 rounded-full text-[#7180B9] bg-blue-900/50 border border-[#7180B9]">JavaScript</span>
+                        </div>
+                        <div class="flex justify-center">
+                            <a href="https://horda-cross-website.vercel.app/" target="_blank" class="flex items-center justify-center gap-1 w-full sm:w-1/2 px-3 sm:px-4 py-2 text-xs sm:text-sm font-bold text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition duration-300">
+                                Ver Projeto
+                                <ion-icon name="arrow-forward" class="h-4 w-4 sm:h-[20px] sm:w-[20px]"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section id="contatos"
+            class="fade-in bg-gradient-to-r from-[#111827] via-[#030712] to-[#111827] w-full h-full pt-10 pb-8 md:pb-[50px]">
+            <p class="text-white text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">Meus contatos</p>
+            <p class="text-white text-center text-sm sm:text-base pb-6 md:pb-10 px-4">Tem uma ideia, projeto ou uma vaga
+                para mim? Estou disponivel para conversar!</p>
+            <article class="flex flex-col lg:flex-row justify-evenly items-center gap-6 md:gap-6">
+                <div class="h-auto min-h-[250px] md:h-[500px] w-full max-w-sm sm:max-w-md md:max-w-lg lg:w-[500px] flex flex-col items-center justify-around border rounded-lg bg-[#030712] border-[#111827] m-4 md:m-0">
+                    <p class="text-center m-6 md:m-10 text-base sm:text-lg text-white">Minhas principais redes sociais
+                    </p>
+                    <div class="flex justify-center items-center gap-4 sm:gap-6 md:gap-10">
+                        <div class="h-24 w-24 sm:h-28 sm:w-28 md:h-[120px] md:w-[120px] bg-[#030712] border border-[#111827] rounded-lg p-3 sm:p-4 md:p-5 flex items-center justify-center text-center duration-300 hover:scale-[1.05] hover:shadow-[inset_0_0_5px_#7180B9]">
+                            <a href="https://github.com/daviniccacio" class="flex flex-col items-center">
+                                <ion-icon name="logo-github"
+                                    class="h-8 w-8 sm:h-10 sm:w-10 md:h-[50px] md:w-[50px] rounded-lg text-blue-300"></ion-icon>
+                                <p class="text-white text-xs sm:text-sm mt-1">GitHub</p>
+                            </a>
+                        </div>
+                        <div class="h-24 w-24 sm:h-28 sm:w-28 md:h-[120px] md:w-[120px] bg-[#030712] border border-[#111827] rounded-lg p-3 sm:p-4 md:p-5 flex items-center justify-center text-center duration-300 hover:scale-[1.05] hover:shadow-[inset_0_0_5px_#7180B9]">
+                            <a href="https://www.instagram.com/daviniccacio/" class="flex flex-col items-center">
+                                <ion-icon name="logo-instagram" class="h-8 w-8 sm:h-10 sm:w-10 md:h-[50px] md:w-[50px] rounded-lg text-blue-300"></ion-icon>
+                                <p class="text-white text-xs sm:text-sm mt-1">Instagram</p>
+                            </a>
+                        </div>
+                        <div class="h-24 w-24 sm:h-28 sm:w-28 md:h-[120px] md:w-[120px] bg-[#030712] border border-[#111827] rounded-lg p-3 sm:p-4 md:p-5 flex items-center justify-center text-center duration-300 hover:scale-[1.05] hover:shadow-[inset_0_0_5px_#7180B9]">
+                            <a href="https://www.linkedin.com/in/daviniccacio/" class="flex flex-col items-center">
+                                <ion-icon name="logo-linkedin" class="h-8 w-8 sm:h-10 sm:w-10 md:h-[50px] md:w-[50px] rounded-lg text-blue-300"></ion-icon>
+                                <p class="text-white text-xs sm:text-sm mt-1">LinkedIn</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bg-[#111827] m-4 md:m-10 p-3 sm:p-4 border border-[#113355] rounded-lg">
+                        <p class="text-white text-center text-xs sm:text-sm">Clique em uma das opções para me acompanhar
+                            ou entrar em contato direto.</p>
+                    </div>
+                </div>
+                <div class="h-auto min-h-[250px] md:h-[500px] w-full max-w-sm sm:max-w-md md:max-w-lg lg:w-[500px] flex flex-col items-center justify-around border rounded-lg bg-[#030712] border-[#111827] m-4 md:m-0">
+                    <p class="text-center m-6 md:m-10 text-base sm:text-lg text-white">Resposta rápida</p>
+                    <div class="flex justify-center items-center gap-6 sm:gap-10 md:gap-20">
+                        <div class="h-24 w-24 sm:h-28 sm:w-28 md:h-[120px] md:w-[120px] bg-[#030712] border border-[#111827] rounded-lg p-3 sm:p-4 md:p-5 flex items-center justify-center text-center duration-300 hover:scale-[1.05] hover:shadow-[inset_0_0_5px_#7180B9]">
+                            <a href="https://wa.me/5598985597868" class="flex flex-col items-center">
+                                <ion-icon name="logo-whatsapp" class="h-8 w-8 sm:h-10 sm:w-10 md:h-[50px] md:w-[50px] rounded-lg text-blue-300"></ion-icon>
+                                <p class="text-white text-xs sm:text-sm mt-1">WhatsApp</p>
+                            </a>
+                        </div>
+                        <div class="h-24 w-24 sm:h-28 sm:w-28 md:h-[120px] md:w-[120px] bg-[#030712] border border-[#111827] rounded-lg p-3 sm:p-4 md:p-5 flex items-center justify-center text-center duration-300 hover:scale-[1.05] hover:shadow-[inset_0_0_5px_#7180B9]">
+                            <a href="mailto:daviniccacio@gmail.com?subject=Olá%20Davi&body=Gostaria%20de%20falar%20com%20você."
+                                class="flex flex-col items-center">
+                                <ion-icon name="mail-outline" class="h-8 w-8 sm:h-10 sm:w-10 md:h-[50px] md:w-[50px] rounded-lg text-blue-300"></ion-icon>
+                                <p class="text-white text-xs sm:text-sm mt-1">Gmail</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bg-[#111827] m-4 md:m-10 p-3 sm:p-4 border border-[#113355] rounded-lg">
+                        <p class="text-white text-center text-xs sm:text-sm">Clique em uma das opções para me mandar uma
+                            mensagem.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="bg-[#0B0C08] p-4 sm:p-6 md:p-8 border-t border-[#113355]">
+        <p class="text-center text-xs sm:text-sm font-light text-blue-200">© 2025 Davi Nicacio. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="../script/main.js"></script>
+</body>
+
+</html>
